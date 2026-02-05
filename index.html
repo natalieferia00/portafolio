@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NatalieFeria | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&family=Orbitron:wght@700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
             </p>
             <div class="hero-stats">
                 <div class="stat"><strong>6+</strong> Meses Exp.</div>
-                <div class="stat"><strong>4</strong> Proyectos</div>
+                <div class="stat"><strong>5</strong> Proyectos</div>
             </div>
         </div>
         
@@ -56,7 +56,6 @@
                 </div>
                 <div class="project-view">Ver Dashboard ↗</div>
             </div>
-
             <div class="project-process">
                 <div class="step">
                     <span class="step-label">PROCESS_01</span>
@@ -72,15 +71,6 @@
                     <span class="step-label">PROCESS_03</span>
                     <h4>Resultados</h4>
                     <p>Cálculo de inversión automatizado mediante el estado de componentes en Angular.</p>
-                </div>
-                <div class="step full-width">
-                    <div class="pdf-card">
-                        <div class="pdf-info">
-                            <strong>voyagee-documentacion.pdf</strong>
-                            <p>Roadmap técnico y arquitectura del sistema.</p>
-                        </div>
-                        <a href="https://drive.google.com/file/d/1yghiFMdrrEokRs0HjrZ5G6cJ3b6GfaqA/view?usp=sharing" target="_blank" class="btn-pdf">Documentación ↗</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -141,44 +131,75 @@
             </div>
         </div>
 
-<div class="project-wrapper">
-    <div class="project-card">
-        <div class="project-info">
-            <span class="num">04</span>
-            <h3>Accenture Retro Games & Challenges</h3>
-            <p>Ecosistema de juegos corporativos (Tetris, Sudoku & Math Challenge) con lógica de acceso simplificada.</p>
+        <div class="project-wrapper">
+            <div class="project-card" onclick="saveAndRedirect('Accenture Cyber Terminal', 'https://accenturegamesnewsletter.vercel.app/')">
+                <div class="project-info">
+                    <span class="num">04</span>
+                    <div class="title-row">
+                        <h3>Accenture Cyber Terminal</h3>
+                        <span class="badge-dev" style="background: #ff00ff; color: white;">NUEVA UI</span>
+                    </div>
+                    <p>Interfaz de mando Cyberpunk para el ecosistema de juegos corporativos de Accenture.</p>
+                </div>
+                <div class="project-view" style="color: #00fbff;">Acceder a Terminal ↗</div>
+            </div>
+            <div class="project-process">
+                <div class="step">
+                    <span class="step-label">UI_ENGINE</span>
+                    <h4>Cortes Geométricos</h4>
+                    <p>Uso de <i>clip-path</i> para crear una estética de hardware futurista sin usar imágenes pesadas.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">UX_VIBE</span>
+                    <h4>Inmersión</h4>
+                    <p>Efectos de scanlines y ruido visual para simular una terminal de datos de alta seguridad.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">JS_CORE</span>
+                    <h4>Ruteo Dinámico</h4>
+                    <p>Lógica centralizada para disparar los diferentes retos (Tetris, Sudoku, Math) desde un solo nodo.</p>
+                </div>
+            </div>
         </div>
-        <div class="project-links">
-            <a href="https://tetris-retro-three.vercel.app/" target="_blank" class="btn-mini">🕹️ Tetris</a>
-            <a href="https://retoretroacc.github.io/sudoku1.0/" target="_blank" class="btn-mini">🧩 Sudoku</a>
-            <a href="https://retoretroacc.github.io/matematicas-challenge-acc/matematicas.html" target="_blank" class="btn-mini">🧮 Math Challenge</a>
+
+        <div class="project-wrapper">
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="num">05</span>
+                    <h3>Accenture Retro Games & Challenges</h3>
+                    <p>Módulos individuales de juego con lógica de acceso simplificada.</p>
+                </div>
+                <div class="project-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                    <a href="https://tetris-retro-three.vercel.app/" target="_blank" class="btn-mini">🕹️ Tetris</a>
+                    <a href="https://retoretroacc.github.io/sudoku1.0/" target="_blank" class="btn-mini">🧩 Sudoku</a>
+                    <a href="https://retoretroacc.github.io/matematicas-challenge-acc/matematicas.html" target="_blank" class="btn-mini">🧮 Math</a>
+                </div>
+            </div>
+            <div class="project-process">
+                <div class="step">
+                    <span class="step-label">AUTH</span>
+                    <h4>Acceso Libre</h4>
+                    <p>Validación mediante llaves dinámicas para eliminar la fricción del registro tradicional.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">PLATFORM</span>
+                    <h4>Desktop First</h4>
+                    <p>Optimizado para la interacción rápida con teclado numérico en entornos de oficina.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">ENGAGEMENT</span>
+                    <h4>Real-time</h4>
+                    <p>Cronómetros y validación instantánea para maximizar la competitividad en el newsletter.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="project-process">
-        <div class="step">
-            <span class="step-label">AUTH_STRATEGY</span>
-            <h4>Acceso por Llave Dinámica</h4>
-            <p>Implementación de validación mediante "cualquier palabra" para Sudoku y Math Challenge, eliminando la fricción de un gestor de contraseñas para el registro de partidas.</p>
-        </div>
-        <div class="step">
-            <span class="step-label">TARGET_PLATFORM</span>
-            <h4>Desktop Experience</h4>
-            <p>El reto matemático fue diseñado específicamente para **entornos de escritorio**, optimizando la interfaz para la interacción rápida con teclado numérico en puestos de trabajo.</p>
-        </div>
-        <div class="step">
-            <span class="step-label">JS_LOGIC</span>
-            <h4>Validación en Tiempo Real</h4>
-            <p>Motores en JS puro que gestionan cronómetros y validación de respuestas instantáneas para maximizar el engagement en el newsletter corporativo.</p>
-        </div>
-    </div>
-</div>
 
     </section>
 
     <footer class="sync-footer">
         <div class="widget">
             <span class="status-dot"></span> 
-            <span id="status-text">Disponible</span>
+            <span id="status-text">Disponible para proyectos</span>
         </div>
         <div id="live-widget" class="widget"></div>
     </footer>
