@@ -28,7 +28,7 @@
             </p>
             <div class="hero-stats">
                 <div class="stat"><strong>6+</strong> Meses Exp.</div>
-                <div class="stat"><strong>5</strong> Proyectos</div>
+                <div class="stat"><strong>6</strong> Proyectos</div>
             </div>
         </div>
         
@@ -53,6 +53,9 @@
                         <span class="badge-dev">EN DESARROLLO</span>
                     </div>
                     <p>Gestión dinámica en Angular sustituyendo flujos estáticos.</p>
+                    <div class="project-links" style="margin-top: 15px;">
+                        <a href="https://drive.google.com/file/d/1yghiFMdrrEokRs0HjrZ5G6cJ3b6GfaqA/view?usp=sharing" target="_blank" class="btn-mini" onclick="event.stopPropagation();"> Ver Documentación</a>
+                    </div>
                 </div>
                 <div class="project-view">Ver Dashboard ↗</div>
             </div>
@@ -157,7 +160,7 @@
                 <div class="step">
                     <span class="step-label">JS_CORE</span>
                     <h4>Ruteo Dinámico</h4>
-                    <p>Lógica centralizada para disparar los diferentes retos (Tetris, Sudoku, Math) desde un solo nodo.</p>
+                    <p>Lógica centralizada para disparar los diferentes retos desde un solo nodo.</p>
                 </div>
             </div>
         </div>
@@ -184,15 +187,53 @@
                 <div class="step">
                     <span class="step-label">PLATFORM</span>
                     <h4>Desktop First</h4>
-                    <p>Optimizado para la interacción rápida con teclado numérico en entornos de oficina.</p>
+                    <p>Optimizado para la interacción rápida con teclado numérico.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">ENGAGEMENT</span>
                     <h4>Real-time</h4>
-                    <p>Cronómetros y validación instantánea para maximizar la competitividad en el newsletter.</p>
+                    <p>Cronómetros y validación instantánea para maximizar la competitividad.</p>
                 </div>
             </div>
         </div>
+
+       <div class="project-wrapper">
+    <div class="project-card" onclick="saveAndRedirect('Foodly App', 'https://foodly-ten.vercel.app/')">
+        <div class="project-info">
+            <span class="num">06</span>
+            <div class="title-row">
+                <h3>Foodly — Gestión de Alimentación</h3>
+                <span class="badge-dev" style="background: #2ecc71; color: white;">FULL STACK</span>
+            </div>
+            <p>
+                Planificación semanal con arquitectura MEAN. 
+                <strong>Nota:</strong> Esta demo opera con <i>LocalStorage</i>; el código con persistencia en MongoDB está disponible en GitHub.
+            </p>
+            <div class="project-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                <a href="https://drive.google.com/file/d/1BID8HUooGH5OW0pSXItwPJzTSrXTUSF8/view?usp=sharing" target="_blank" class="btn-mini" onclick="event.stopPropagation();">Ver Especificaciones</a>
+                <a href="https://github.com/natalieferia00" target="_blank" class="btn-mini" onclick="event.stopPropagation();" style="background: #333;">Ver Código GitHub</a>
+            </div>
+        </div>
+        <div class="project-view" style="color: #2ecc71;">Probar Demo ↗</div>
+    </div>
+    <div class="project-process">
+        <div class="step">
+            <span class="step-label">STACK_MEAN</span>
+            <h4>Arquitectura</h4>
+            <p>Estructura escalable con Node.js y Express para la gestión de servicios API.</p>
+        </div>
+        <div class="step">
+            <span class="step-label">LOCAL_PERSISTENCE</span>
+            <h4>Almacenamiento</h4>
+            <p>Uso de LocalStorage para garantizar una experiencia de usuario rápida sin latencia de red.</p>
+        </div>
+        <div class="step">
+            <span class="step-label">UI_SYNC</span>
+            <h4>Sincronización</h4>
+            <p>Mantenimiento de coherencia visual entre los widgets de menú y la lista de compras.</p>
+        </div>
+    </div>
+</div>
 
     </section>
 
@@ -205,5 +246,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+       
+        function saveAndRedirect(projectName, url) {
+            localStorage.setItem('lastProjectViewed', projectName);
+            localStorage.setItem('lastViewDate', new Date().toLocaleString());
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 </html>
