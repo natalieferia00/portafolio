@@ -6,9 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalie Feria | Developer & Tester</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&family=Orbitron:wght@700&family=Rajdhani:wght@500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&family=Orbitron:wght@700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Integración de estilos para componentes de proyectos */
+        .doc-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .doc-button:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+
+        .documentation-step {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .figma-container {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+
+        .figma-container h4 {
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+            color: #00fbff;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,14 +64,12 @@
             <p class="tagline">Natalie Feria — 6 meses de experiencia</p>
             <h1>DEVELOPER <br> <span>& TESTER</span></h1>
             <p class="parla">
-                Especialista en convertir diseños complejos en interfaces píxel-perfect y asegurar su estabilidad
-                técnica.
-                Fusiono el desarrollo de código eficiente con un enfoque analítico para entregar productos digitales
-                impecables.
+                Especialista en convertir diseños complejos en interfaces píxel-perfect y asegurar su estabilidad técnica.
+                Fusiono el desarrollo de código eficiente con un enfoque analítico para entregar productos digitales impecables.
             </p>
             <div class="hero-stats">
                 <div class="stat"><strong>6+</strong> Meses Exp.</div>
-                <div class="stat"><strong>7</strong> Proyectos</div>
+                <div class="stat"><strong>5</strong> Proyectos</div>
             </div>
         </div>
 
@@ -49,6 +84,7 @@
             <h2>PROYECTOS</h2>
             <p>Soluciones técnicas, arquitectura limpia y aseguramiento de calidad</p>
         </div>
+
         <div class="project-wrapper">
             <div class="project-card" onclick="saveAndRedirect('Museo Artium', 'https://museo-page.vercel.app/')">
                 <div class="project-info">
@@ -59,11 +95,8 @@
                     </div>
                     <p>Sistema integral de citas con PWA, backend en Node.js y testing automatizado con Jest.</p>
                     <div class="project-links" style="display: flex; gap: 10px; margin-top: 15px;">
-                        <a href="https://drive.google.com/file/d/1Lzo_wC978XI80RvQ8GlH1gpBJwxdF5Xv/view?usp=sharing"
-                            target="_blank" class="btn-mini" onclick="event.stopPropagation();">Documentación
-                            Técnica</a>
-                        <a href="https://github.com/natalieferia00" target="_blank" class="btn-mini"
-                            onclick="event.stopPropagation();" style="background: #333;">Repositorio</a>
+                        <a href="https://drive.google.com/file/d/1Lzo_wC978XI80RvQ8GlH1gpBJwxdF5Xv/view?usp=sharing" target="_blank" class="btn-mini" onclick="event.stopPropagation();">Documentación Técnica</a>
+                        <a href="https://github.com/natalieferia00" target="_blank" class="btn-mini" onclick="event.stopPropagation();" style="background: #333;">Repositorio</a>
                     </div>
                 </div>
                 <div class="project-view" style="color: #2ecc71;">Explorar Sistema ↗</div>
@@ -72,115 +105,49 @@
                 <div class="step">
                     <span class="step-label">BACKEND_API</span>
                     <h4>Arquitectura</h4>
-                    <p>API REST con persistencia en MongoDB Atlas y documentación interactiva en Swagger.</p>
+                    <p>API REST con MongoDB Atlas y Swagger.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">QA_AUTOMATION</span>
                     <h4>Testing</h4>
-                    <p>Pruebas unitarias con Jest para validación de reglas de negocio y latencia < 200ms.</p>
+                    <p>Pruebas unitarias con Jest y latencia < 200ms.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">PWA_OFFLINE</span>
                     <h4>Disponibilidad</h4>
-                    <p>Instalación habilitada y persistencia local para sincronización fluida con widgets.</p>
+                    <p>Sincronización fluida con widgets y modo offline.</p>
                 </div>
             </div>
         </div>
+
         <div class="project-wrapper">
-            <div class="project-card" onclick="saveAndRedirect('Voyagee App', 'https://voyageee.vercel.app/dashboard')">
+            <div class="project-card" onclick="saveAndRedirect('Serum Shop Full Stack', 'https://tiendaserum1.vercel.app/')">
                 <div class="project-info">
                     <span class="num">02</span>
-                    <div class="title-row">
-                        <h3>Voyagee — Smart Travel Planner</h3>
-                        <span class="badge-dev">EN DESARROLLO</span>
-                    </div>
-                    <p>Gestión dinámica en Angular sustituyendo flujos estáticos.</p>
-                    <div class="project-links" style="margin-top: 15px;">
-                        <a href="https://drive.google.com/file/d/1yghiFMdrrEokRs0HjrZ5G6cJ3b6GfaqA/view?usp=sharing"
-                            target="_blank" class="btn-mini" onclick="event.stopPropagation();"> Ver Documentación</a>
-                    </div>
+                    <h3>Serum Shop Full Stack</h3>
+                    <p>E-commerce MERN con sincronización de inventario en tiempo real.</p>
                 </div>
-                <div class="project-view">Ver Dashboard ↗</div>
+                <div class="project-view">Ver Tienda ↗</div>
             </div>
             <div class="project-process">
                 <div class="step">
-                    <span class="step-label">PROCESS_01</span>
-                    <h4>Análisis</h4>
-                    <p>Digitalización de procesos: de hojas de cálculo a una interfaz reactiva.</p>
-                </div>
-                <div class="step">
-                    <span class="step-label">QA_LOGIC</span>
-                    <h4>Validación</h4>
-                    <p>Lógica de filtrado dinámico testeada para categorización en tiempo real.</p>
-                </div>
-                <div class="step">
-                    <span class="step-label">WIDGET_SYNC</span>
+                    <span class="step-label">FULLSTACK_MERN</span>
                     <h4>Sincronización</h4>
-                    <p>Mantenimiento de coherencia total con los widgets de datos.</p>
+                    <p>Vinculación dinámica de IDs y stock real.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">QA_TESTING</span>
+                    <h4>Unit Testing</h4>
+                    <p>Validación de esquemas implementada con Jest.</p>
+                </div>
+                <div class="step documentation-step">
+                    <span class="step-label">DOC_PROYECTO</span>
+                    <h4>Documentación</h4>
+                    <p>Reporte de arquitectura y hallazgos técnicos.</p>
+                    <a href="https://drive.google.com/file/d/1i67qClBTVMIarT2aL4QQVqA6Nez5bTw5/view?usp=sharing" target="_blank" class="doc-button">Ver Documento Técnico</a>
                 </div>
             </div>
         </div>
-
-       <div class="project-wrapper">
-    <div class="project-card" onclick="saveAndRedirect('Serum Shop Full Stack', 'https://tiendaserum1.vercel.app/')">
-        <div class="project-info">
-            <span class="num">02</span>
-            <h3>Serum Shop Full Stack</h3>
-            <p>E-commerce MERN con sincronización de inventario en tiempo real y base de datos en la nube.</p>
-        </div>
-        <div class="project-view">Ver Tienda ↗</div>
-    </div>
-
-    <div class="project-process">
-        <div class="step">
-            <span class="step-label">FULLSTACK_MERN</span>
-            <h4>Sincronización</h4>
-            <p>Vinculación dinámica de IDs y stock real mediante MongoDB Atlas y Render.</p>
-        </div>
-        
-        <div class="step">
-            <span class="step-label">QA_TESTING</span>
-            <h4>Unit Testing</h4>
-            <p>Validación de esquemas y lógica de negocio implementada con Jest.</p>
-        </div>
-
-        <div class="step documentation-step">
-            <span class="step-label">DOC_PROYECTO</span>
-            <h4>Documentación</h4>
-            <p>Reporte detallado de arquitectura, pruebas de QA y hallazgos técnicos.</p>
-            <a href="https://drive.google.com/file/d/1i67qClBTVMIarT2aL4QQVqA6Nez5bTw5/view?usp=sharing" 
-               target="_blank" 
-               class="doc-button">
-                Ver Documento Técnico 
-            </a>
-        </div>
-    </div>
-</div>
-
-<style>
-    /* Estilos sugeridos para integrar el botón con tu diseño actual */
-    .doc-button {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 8px 16px;
-        background-color: #000; /* Ajusta al color de tu marca */
-        color: #fff;
-        text-decoration: none;
-        border-radius: 4px;
-        font-size: 0.85rem;
-        transition: opacity 0.3s ease;
-    }
-
-    .doc-button:hover {
-        opacity: 0.8;
-    }
-
-    .documentation-step {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-</style>
 
         <div class="project-wrapper">
             <div class="project-card" onclick="saveAndRedirect('CarShop', 'https://tiendacarros1.vercel.app/')">
@@ -195,24 +162,23 @@
                 <div class="step">
                     <span class="step-label">PERFORMANCE</span>
                     <h4>Carga</h4>
-                    <p>Optimización de recursos visuales y assets de alta calidad.</p>
+                    <p>Optimización de assets de alta calidad.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">FILTER_LOGIC</span>
                     <h4>Búsqueda</h4>
-                    <p>Lógica de filtrado dinámico por especificaciones técnicas.</p>
+                    <p>Lógica de filtrado dinámico por especificaciones.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">QA_DATA</span>
                     <h4>Integridad</h4>
-                    <p>Verificación de consistencia en la visualización de datos densos.</p>
+                    <p>Verificación de consistencia en datos densos.</p>
                 </div>
             </div>
         </div>
 
         <div class="project-wrapper">
-            <div class="project-card"
-                onclick="saveAndRedirect('Accenture Cyber Terminal', 'https://accenturegamesnewsletter.vercel.app/')">
+            <div class="project-card" onclick="saveAndRedirect('Accenture Cyber Terminal', 'https://accenturegamesnewsletter.vercel.app/')">
                 <div class="project-info">
                     <span class="num">04</span>
                     <div class="title-row">
@@ -227,88 +193,57 @@
                 <div class="step">
                     <span class="step-label">UI_ENGINE</span>
                     <h4>Cortes Geométricos</h4>
-                    <p>Uso de clip-path para estética futurista sin carga de imágenes.</p>
+                    <p>Uso de clip-path para estética futurista.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">JS_CORE</span>
                     <h4>Ruteo</h4>
-                    <p>Lógica centralizada para disparar retos desde un solo nodo.</p>
+                    <p>Lógica centralizada para disparar retos.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">QA_VIBE</span>
                     <h4>Estabilidad</h4>
-                    <p>Pruebas de efectos visuales (scanlines) para rendimiento óptimo.</p>
+                    <p>Pruebas de efectos visuales para rendimiento.</p>
                 </div>
             </div>
         </div>
 
+        <div class="figma-container">
+            <h4>Interactive Prototype: Street Food Spencer</h4>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px;" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/Ufc0gc70YAt2f83IooahvZ/street-food-spencer?node-id=1-2&t=twFfEJ002nO3rW4p-1&starting-point-node-id=1%3A2" allowfullscreen></iframe>
+        </div>
+
         <div class="project-wrapper">
-            <div class="project-card">
+            <div class="project-card" onclick="saveAndRedirect('Voyagee', 'https://voyageee.vercel.app/dashboard')">
                 <div class="project-info">
                     <span class="num">05</span>
-                    <h3>Accenture Retro Games</h3>
-                    <p>Módulos de juego con lógica de acceso simplificada.</p>
-                </div>
-                <div class="project-links" style="display: flex; gap: 10px; margin-top: 15px;">
-                    <a href="https://tetris-retro-three.vercel.app/" target="_blank" class="btn-mini">🕹️ Tetris</a>
-                    <a href="https://retoretroacc.github.io/sudoku1.0/" target="_blank" class="btn-mini">🧩 Sudoku</a>
-                    <a href="https://retoretroacc.github.io/matematicas-challenge-acc/matematicas.html" target="_blank"
-                        class="btn-mini">🧮 Math</a>
-                </div>
-            </div>
-            <div class="project-process">
-                <div class="step">
-                    <span class="step-label">AUTH</span>
-                    <h4>Acceso</h4>
-                    <p>Validación mediante llaves dinámicas para eliminar registros.</p>
-                </div>
-                <div class="step">
-                    <span class="step-label">ENGAGEMENT</span>
-                    <h4>Real-time</h4>
-                    <p>Cronómetros y validación instantánea de resultados.</p>
-                </div>
-                <div class="step">
-                    <span class="step-label">QA_TEST</span>
-                    <h4>Funcional</h4>
-                    <p>Pruebas de regresión en cada módulo de juego retro.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-wrapper">
-            <div class="project-card"
-                onclick="saveAndRedirect('Foodly App', 'https://planificador-comidas-full-stack.vercel.app/')">
-                <div class="project-info">
-                    <span class="num">06</span>
                     <div class="title-row">
-                        <h3>Foodly — Gestión de Alimentación</h3>
-                        <span class="badge-dev" style="background: #2ecc71; color: white;">FULL STACK</span>
+                        <h3>Voyagee — Smart Travel Manager</h3>
+                        <span class="badge-dev" style="background: #3498db; color: white;">UI/UX + FRONTEND</span>
                     </div>
-                    <p>Aplicación MEAN con sincronización en tiempo real con MongoDB Atlas.</p>
+                    <p>Adiós a las hojas de cálculo. Gestión de itinerarios y presupuestos dinámicos.</p>
                     <div class="project-links" style="display: flex; gap: 10px; margin-top: 15px;">
-                        <a href="https://drive.google.com/file/d/1BID8HUooGH5OW0pSXItwPJzTSrXTUSF8/view?usp=sharing"
-                            target="_blank" class="btn-mini" onclick="event.stopPropagation();">Especificaciones</a>
-                        <a href="https://github.com/natalieferia00" target="_blank" class="btn-mini"
-                            onclick="event.stopPropagation();" style="background: #333;">GitHub</a>
+                        <a href="https://github.com/natalieferia00" target="_blank" class="btn-mini" onclick="event.stopPropagation();" style="background: #333;">Repositorio</a>
+                        <a href="https://voyageee.vercel.app/dashboard" target="_blank" class="btn-mini" onclick="event.stopPropagation();" style="background: #3498db;">Demo en Vivo</a>
                     </div>
                 </div>
-                <div class="project-view" style="color: #2ecc71;">Probar App ↗</div>
+                <div class="project-view" style="color: #3498db;">Explorar Dashboard ↗</div>
             </div>
             <div class="project-process">
                 <div class="step">
-                    <span class="step-label">STACK_MEAN</span>
-                    <h4>Arquitectura</h4>
-                    <p>Estructura profesional con Node.js, Express y MongoDB.</p>
+                    <span class="step-label">DATA_VISUALIZATION</span>
+                    <h4>Control de Gastos</h4>
+                    <p>Gráficos de consumo y alertas en tiempo real.</p>
                 </div>
                 <div class="step">
-                    <span class="step-label">QA_SYNC</span>
-                    <h4>Persistencia</h4>
-                    <p>Pruebas de integridad de datos en la nube (MongoDB Atlas).</p>
+                    <span class="step-label">DYNAMIC_ITINERARY</span>
+                    <h4>Planificación</h4>
+                    <p>Organización de paradas mediante Drag & Drop.</p>
                 </div>
                 <div class="step">
                     <span class="step-label">WIDGET_SYNC</span>
-                    <h4>Integración</h4>
-                    <p>Sincronización total entre el dashboard y widgets externos.</p>
+                    <h4>Acceso Rápido</h4>
+                    <p>Sincronización total con widgets del dispositivo.</p>
                 </div>
             </div>
         </div>
@@ -334,5 +269,4 @@
         }
     </script>
 </body>
-
 </html>
